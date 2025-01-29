@@ -1,0 +1,117 @@
+/* Fuente general */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px -5px 10px 5px rgba(0, 0, 0, 0.5);
+    width: 60%;
+    max-width: 800px;
+    height: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de las columnas */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+/* Ajuste para los campos que deben ocupar ambas columnas */
+.full-width {
+    grid-column: span 2;
+}
+
+/* Estilo de los grupos de formulario */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+/* Etiquetas */
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Campos de entrada */
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Ajuste del área de texto */
+textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+/* Contenedor de checkboxes */
+.checkbox-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Checkboxes */
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Estilo del botón "Guardar Producto" */
+button {
+    background-color: #1aab8a;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 40%;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3% auto;
+}
+
+/* Efecto hover del botón */
+button:hover {
+    background-color: #168f72;
+}
+
+/* Ajuste responsivo */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        box-shadow: 2px -2px 5px 2px rgba(0, 0, 0, 0.3);
+    }
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}

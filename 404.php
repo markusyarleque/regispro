@@ -1,3 +1,9 @@
+<?php
+require_once('includes/load.php');
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -6,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página no encontrada</title>
     <link rel="stylesheet" href="<?php echo ROOT_URL; ?>/libs/css/styles.css" />
+    <meta http-equiv="refresh" content="5; url=<?php echo ROOT_URL; ?>" />
     <style>
         body,
         html {
@@ -34,19 +41,19 @@
 
         @media only screen and (min-width: 1920px) {
             body {
-                background-image: url('uploads/404-large.jpg');
+                background-image: url('libs/img/404-large.jpg');
             }
         }
 
         @media only screen and (max-width: 1919px) {
             body {
-                background-image: url('uploads/404-medium.jpg');
+                background-image: url('libs/img/404-medium.jpg');
             }
         }
 
         @media only screen and (max-width: 768px) {
             body {
-                background-image: url('uploads/404-small.jpg');
+                background-image: url('libs/img/404-small.jpg');
             }
         }
     </style>
@@ -58,10 +65,14 @@
 </head>
 
 <body>
-    <div id="footer_404">
-        <a href="javascript:void(0);" onclick="goBack()">
-            Volver
-        </a>
+    <div>
+        <h1>Página no encontrada</h1>
+        <p>Lo sentimos, la página que buscas no está disponible.</p>
+        <div id="footer_404">
+            <a href="javascript:void(0);" onclick="goBack()">
+                Volver
+            </a>
+        </div>
     </div>
 </body>
 

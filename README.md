@@ -9,7 +9,7 @@
 
 ### 1. Clonar o descargar el repositorio
 
-Si el proyecto está disponible en un repositorio de Git (por ejemplo, GitHub), puedes clonarlo usando el siguiente comando:
+Utiliza el siguiente comando para clonar el proyecto:
 
 ```bash
 git clone https://github.com/markusyarleque/regispro.git
@@ -29,7 +29,7 @@ Si estás utilizando un servidor local como **XAMPP**, **MAMP**, **WAMP** o simi
 - Crea una nueva base de datos con el nombre de **bd_registro**.
 - Ejecuta el siguiente comando en **phpMyAdmin**:
   - Selecciona la base de datos recién creada.
-  - Haz clic en **Importar** y selecciona el archivo **base_de_datos.sql** incluido en la carpeta sql del proyecto para crear las tablas necesarias.
+  - Haz clic en **Importar** y selecciona el archivo **base_de_datos.sql** incluido en la carpeta **sql** del proyecto para crear las tablas necesarias.
 
 ### 4. Configuración del entorno
 

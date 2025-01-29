@@ -1,0 +1,8 @@
+# Redirección de errores 404
+ErrorDocument 404 /regispro/404.php
+
+# Protección del archivo .env
+<Files .env>
+    Order Allow,Deny
+    Deny from all
+</Files>
